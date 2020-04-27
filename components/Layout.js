@@ -26,6 +26,9 @@ Router.onRouteChangeError = () => NProgress.done();
       <Link href="/about">
         <a> About</a>
       </Link>
+      <Link href="/blog">
+        <a> Blog </a>
+      </Link>
     </header>
 
     <h1> {title} </h1>
