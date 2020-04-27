@@ -15,12 +15,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! nprogress */ "./node_modules/nprogress/nprogress.js");
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_5__);
 var _this = undefined,
     _jsxFileName = "/Users/davidgabeau/Desktop/portfolio/components/Layout.js";
 
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+
+
+next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeStart = function (url) {
+  console.log(url);
+  nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.start();
+};
+
+next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeComplete = function () {
+  return nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.done();
+};
+
+next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeError = function () {
+  return nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.done();
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
   var children = _ref.children,
@@ -30,15 +53,30 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 16,
       columnNumber: 1
     }
-  }, __jsx("header", {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 3
+    }
+  }, __jsx("title", {
     className: "jsx-4129712364",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 18,
+      columnNumber: 5
+    }
+  }, " GLO ")), __jsx("header", {
+    className: "jsx-4129712364",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
       columnNumber: 5
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -46,7 +84,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 23,
       columnNumber: 7
     }
   }, __jsx("a", {
@@ -54,7 +92,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 24,
       columnNumber: 9
     }
   }, " Home ")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -62,7 +100,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 26,
       columnNumber: 7
     }
   }, __jsx("a", {
@@ -70,7 +108,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 27,
       columnNumber: 9
     }
   }, " About"))), __jsx("h1", {
@@ -78,7 +116,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 31,
       columnNumber: 5
     }
   }, " ", title, " "), children, __jsx("footer", {
@@ -86,16 +124,16 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 34,
       columnNumber: 3
     }
   }, "\xA9 ", new Date().getFullYear(), " "), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "2501593223",
     __self: _this
-  }, ".root.jsx-4129712364{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}header.jsx-4129712364{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;padding:1em;font-size:1.2rem;background:indigo;}header.jsx-4129712364 a.jsx-4129712364{color:darkgrey;-webkit-text-decoration:none;text-decoration:none;}header.jsx-4129712364 a.jsx-4129712364:hover{font-weight:bold;color:lightgrey;}footer.jsx-4129712364{padding:1em;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYXZpZGdhYmVhdS9EZXNrdG9wL3BvcnRmb2xpby9jb21wb25lbnRzL0xheW91dC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFrQmMsQUFHb0IsQUFNRixBQVFJLEFBSUUsQUFJTCxXQWZDLENBZ0JmLEdBUnVCLEVBSUwsZ0JBQ2xCLGdDQUpBLFNBZnlCLFdBT00sd0ZBTlYsbUNBT1AsWUFDSyxpQkFDQyxrQkFDcEIsV0FUd0IsOEVBQ3hCIiwiZmlsZSI6Ii9Vc2Vycy9kYXZpZGdhYmVhdS9EZXNrdG9wL3BvcnRmb2xpby9jb21wb25lbnRzL0xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XG5cbiAgZXhwb3J0IGRlZmF1bHQgKHsgY2hpbGRyZW4sIHRpdGxlIH0pID0+IChcblxuPGRpdiBjbGFzc05hbWU9XCJyb290XCI+XG4gICAgPGhlYWRlcj5cbiAgICAgIDxMaW5rIGhyZWY9XCIvXCI+XG4gICAgICAgIDxhPiBIb21lIDwvYT5cbiAgICAgIDwvTGluaz5cbiAgICAgIDxMaW5rIGhyZWY9XCIvYWJvdXRcIj5cbiAgICAgICAgPGE+IEFib3V0PC9hPlxuICAgICAgPC9MaW5rPlxuICAgIDwvaGVhZGVyPlxuXG4gICAgPGgxPiB7dGl0bGV9IDwvaDE+XG4gICAge2NoaWxkcmVufVxuXG4gIDxmb290ZXI+JmNvcHk7IHtuZXcgRGF0ZSgpLmdldEZ1bGxZZWFyKCl9IDwvZm9vdGVyPlxuICA8c3R5bGUganN4PntgXG4gICAgLnJvb3Qge1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgfVxuICAgIGhlYWRlciB7XG4gICAgICB3aWR0aDogMTAwJTtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICAgIHBhZGRpbmc6IDFlbTtcbiAgICAgIGZvbnQtc2l6ZTogMS4ycmVtO1xuICAgICAgYmFja2dyb3VuZDogaW5kaWdvO1xuICAgIH1cbiAgICBoZWFkZXIgYSB7XG4gICAgICBjb2xvcjogZGFya2dyZXk7XG4gICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgfVxuICAgIGhlYWRlciBhOmhvdmVyIHtcbiAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgICAgY29sb3I6IGxpZ2h0Z3JleTtcbiAgICB9XG4gICAgZm9vdGVyIHtcbiAgICAgIHBhZGRpbmc6IDFlbTtcbiAgICB9XG4gIGB9IDwvc3R5bGU+XG4gIDxzdHlsZSBnbG9iYWwganN4PntgXG4gICAgYm9keSB7XG4gICAgICBtYXJnaW46IDA7XG4gICAgICBmb250LXNpemU6IDExMCVcbiAgICAgIGJhY2tncm91bmQ6ICNmMGYwZjA7XG4gICAgfVxuICAgIGB9PC9zdHlsZT5cblxuPC9kaXY+XG5cblxuXG4pO1xuIl19 */\n/*@ sourceURL=/Users/davidgabeau/Desktop/portfolio/components/Layout.js */"), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }, ".root.jsx-4129712364{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}header.jsx-4129712364{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;padding:1em;font-size:1.2rem;background:indigo;}header.jsx-4129712364 a.jsx-4129712364{color:darkgrey;-webkit-text-decoration:none;text-decoration:none;}header.jsx-4129712364 a.jsx-4129712364:hover{font-weight:bold;color:lightgrey;}footer.jsx-4129712364{padding:1em;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYXZpZGdhYmVhdS9EZXNrdG9wL3BvcnRmb2xpby9jb21wb25lbnRzL0xheW91dC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFrQ2MsQUFHb0IsQUFNRixBQVFJLEFBSUUsQUFJTCxXQWZDLENBZ0JmLEdBUnVCLEVBSUwsZ0JBQ2xCLGdDQUpBLFNBZnlCLFdBT00sd0ZBTlYsbUNBT1AsWUFDSyxpQkFDQyxrQkFDcEIsV0FUd0IsOEVBQ3hCIiwiZmlsZSI6Ii9Vc2Vycy9kYXZpZGdhYmVhdS9EZXNrdG9wL3BvcnRmb2xpby9jb21wb25lbnRzL0xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnO1xuaW1wb3J0IFJvdXRlciBmcm9tICduZXh0L3JvdXRlcic7XG5pbXBvcnQgTlByb2dyZXNzIGZyb20gJ25wcm9ncmVzcyc7XG5cblJvdXRlci5vblJvdXRlQ2hhbmdlU3RhcnQgPSB1cmwgPT4ge1xuICBjb25zb2xlLmxvZyh1cmwpO1xuICBOUHJvZ3Jlc3Muc3RhcnQoKTtcblxufVxuXG5Sb3V0ZXIub25Sb3V0ZUNoYW5nZUNvbXBsZXRlID0gKCkgPT4gTlByb2dyZXNzLmRvbmUoKTtcblJvdXRlci5vblJvdXRlQ2hhbmdlRXJyb3IgPSAoKSA9PiBOUHJvZ3Jlc3MuZG9uZSgpO1xuXG4gIGV4cG9ydCBkZWZhdWx0ICh7IGNoaWxkcmVuLCB0aXRsZSB9KSA9PiAoXG48ZGl2IGNsYXNzTmFtZT1cInJvb3RcIj5cbiAgPEhlYWQ+XG4gICAgPHRpdGxlPiBHTE8gPC90aXRsZT5cbiAgPC9IZWFkPlxuXG5cbiAgICA8aGVhZGVyPlxuICAgICAgPExpbmsgaHJlZj1cIi9cIj5cbiAgICAgICAgPGE+IEhvbWUgPC9hPlxuICAgICAgPC9MaW5rPlxuICAgICAgPExpbmsgaHJlZj1cIi9hYm91dFwiPlxuICAgICAgICA8YT4gQWJvdXQ8L2E+XG4gICAgICA8L0xpbms+XG4gICAgPC9oZWFkZXI+XG5cbiAgICA8aDE+IHt0aXRsZX0gPC9oMT5cbiAgICB7Y2hpbGRyZW59XG5cbiAgPGZvb3Rlcj4mY29weTsge25ldyBEYXRlKCkuZ2V0RnVsbFllYXIoKX0gPC9mb290ZXI+XG4gIDxzdHlsZSBqc3g+e2BcbiAgICAucm9vdCB7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICB9XG4gICAgaGVhZGVyIHtcbiAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgICAgcGFkZGluZzogMWVtO1xuICAgICAgZm9udC1zaXplOiAxLjJyZW07XG4gICAgICBiYWNrZ3JvdW5kOiBpbmRpZ287XG4gICAgfVxuICAgIGhlYWRlciBhIHtcbiAgICAgIGNvbG9yOiBkYXJrZ3JleTtcbiAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICB9XG4gICAgaGVhZGVyIGE6aG92ZXIge1xuICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgICBjb2xvcjogbGlnaHRncmV5O1xuICAgIH1cbiAgICBmb290ZXIge1xuICAgICAgcGFkZGluZzogMWVtO1xuICAgIH1cbiAgYH0gPC9zdHlsZT5cbiAgPHN0eWxlIGdsb2JhbCBqc3g+e2BcbiAgICBib2R5IHtcbiAgICAgIG1hcmdpbjogMDtcbiAgICAgIGZvbnQtc2l6ZTogMTEwJVxuICAgICAgYmFja2dyb3VuZDogI2YwZjBmMDtcbiAgICB9XG4gICAgYH08L3N0eWxlPlxuXG48L2Rpdj5cblxuXG5cbik7XG4iXX0= */\n/*@ sourceURL=/Users/davidgabeau/Desktop/portfolio/components/Layout.js */"), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "916600450",
     __self: _this
-  }, "body{margin:0;font-size:110% background:#f0f0f0;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYXZpZGdhYmVhdS9EZXNrdG9wL3BvcnRmb2xpby9jb21wb25lbnRzL0xheW91dC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2Q3FCLEFBR2dCLFNBRVUsa0NBQ3JCIiwiZmlsZSI6Ii9Vc2Vycy9kYXZpZGdhYmVhdS9EZXNrdG9wL3BvcnRmb2xpby9jb21wb25lbnRzL0xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XG5cbiAgZXhwb3J0IGRlZmF1bHQgKHsgY2hpbGRyZW4sIHRpdGxlIH0pID0+IChcblxuPGRpdiBjbGFzc05hbWU9XCJyb290XCI+XG4gICAgPGhlYWRlcj5cbiAgICAgIDxMaW5rIGhyZWY9XCIvXCI+XG4gICAgICAgIDxhPiBIb21lIDwvYT5cbiAgICAgIDwvTGluaz5cbiAgICAgIDxMaW5rIGhyZWY9XCIvYWJvdXRcIj5cbiAgICAgICAgPGE+IEFib3V0PC9hPlxuICAgICAgPC9MaW5rPlxuICAgIDwvaGVhZGVyPlxuXG4gICAgPGgxPiB7dGl0bGV9IDwvaDE+XG4gICAge2NoaWxkcmVufVxuXG4gIDxmb290ZXI+JmNvcHk7IHtuZXcgRGF0ZSgpLmdldEZ1bGxZZWFyKCl9IDwvZm9vdGVyPlxuICA8c3R5bGUganN4PntgXG4gICAgLnJvb3Qge1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgfVxuICAgIGhlYWRlciB7XG4gICAgICB3aWR0aDogMTAwJTtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICAgIHBhZGRpbmc6IDFlbTtcbiAgICAgIGZvbnQtc2l6ZTogMS4ycmVtO1xuICAgICAgYmFja2dyb3VuZDogaW5kaWdvO1xuICAgIH1cbiAgICBoZWFkZXIgYSB7XG4gICAgICBjb2xvcjogZGFya2dyZXk7XG4gICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgfVxuICAgIGhlYWRlciBhOmhvdmVyIHtcbiAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgICAgY29sb3I6IGxpZ2h0Z3JleTtcbiAgICB9XG4gICAgZm9vdGVyIHtcbiAgICAgIHBhZGRpbmc6IDFlbTtcbiAgICB9XG4gIGB9IDwvc3R5bGU+XG4gIDxzdHlsZSBnbG9iYWwganN4PntgXG4gICAgYm9keSB7XG4gICAgICBtYXJnaW46IDA7XG4gICAgICBmb250LXNpemU6IDExMCVcbiAgICAgIGJhY2tncm91bmQ6ICNmMGYwZjA7XG4gICAgfVxuICAgIGB9PC9zdHlsZT5cblxuPC9kaXY+XG5cblxuXG4pO1xuIl19 */\n/*@ sourceURL=/Users/davidgabeau/Desktop/portfolio/components/Layout.js */"));
+  }, "body{margin:0;font-size:110% background:#f0f0f0;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYXZpZGdhYmVhdS9EZXNrdG9wL3BvcnRmb2xpby9jb21wb25lbnRzL0xheW91dC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2RHFCLEFBR2dCLFNBRVUsa0NBQ3JCIiwiZmlsZSI6Ii9Vc2Vycy9kYXZpZGdhYmVhdS9EZXNrdG9wL3BvcnRmb2xpby9jb21wb25lbnRzL0xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnO1xuaW1wb3J0IFJvdXRlciBmcm9tICduZXh0L3JvdXRlcic7XG5pbXBvcnQgTlByb2dyZXNzIGZyb20gJ25wcm9ncmVzcyc7XG5cblJvdXRlci5vblJvdXRlQ2hhbmdlU3RhcnQgPSB1cmwgPT4ge1xuICBjb25zb2xlLmxvZyh1cmwpO1xuICBOUHJvZ3Jlc3Muc3RhcnQoKTtcblxufVxuXG5Sb3V0ZXIub25Sb3V0ZUNoYW5nZUNvbXBsZXRlID0gKCkgPT4gTlByb2dyZXNzLmRvbmUoKTtcblJvdXRlci5vblJvdXRlQ2hhbmdlRXJyb3IgPSAoKSA9PiBOUHJvZ3Jlc3MuZG9uZSgpO1xuXG4gIGV4cG9ydCBkZWZhdWx0ICh7IGNoaWxkcmVuLCB0aXRsZSB9KSA9PiAoXG48ZGl2IGNsYXNzTmFtZT1cInJvb3RcIj5cbiAgPEhlYWQ+XG4gICAgPHRpdGxlPiBHTE8gPC90aXRsZT5cbiAgPC9IZWFkPlxuXG5cbiAgICA8aGVhZGVyPlxuICAgICAgPExpbmsgaHJlZj1cIi9cIj5cbiAgICAgICAgPGE+IEhvbWUgPC9hPlxuICAgICAgPC9MaW5rPlxuICAgICAgPExpbmsgaHJlZj1cIi9hYm91dFwiPlxuICAgICAgICA8YT4gQWJvdXQ8L2E+XG4gICAgICA8L0xpbms+XG4gICAgPC9oZWFkZXI+XG5cbiAgICA8aDE+IHt0aXRsZX0gPC9oMT5cbiAgICB7Y2hpbGRyZW59XG5cbiAgPGZvb3Rlcj4mY29weTsge25ldyBEYXRlKCkuZ2V0RnVsbFllYXIoKX0gPC9mb290ZXI+XG4gIDxzdHlsZSBqc3g+e2BcbiAgICAucm9vdCB7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICB9XG4gICAgaGVhZGVyIHtcbiAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgICAgcGFkZGluZzogMWVtO1xuICAgICAgZm9udC1zaXplOiAxLjJyZW07XG4gICAgICBiYWNrZ3JvdW5kOiBpbmRpZ287XG4gICAgfVxuICAgIGhlYWRlciBhIHtcbiAgICAgIGNvbG9yOiBkYXJrZ3JleTtcbiAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICB9XG4gICAgaGVhZGVyIGE6aG92ZXIge1xuICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgICBjb2xvcjogbGlnaHRncmV5O1xuICAgIH1cbiAgICBmb290ZXIge1xuICAgICAgcGFkZGluZzogMWVtO1xuICAgIH1cbiAgYH0gPC9zdHlsZT5cbiAgPHN0eWxlIGdsb2JhbCBqc3g+e2BcbiAgICBib2R5IHtcbiAgICAgIG1hcmdpbjogMDtcbiAgICAgIGZvbnQtc2l6ZTogMTEwJVxuICAgICAgYmFja2dyb3VuZDogI2YwZjBmMDtcbiAgICB9XG4gICAgYH08L3N0eWxlPlxuXG48L2Rpdj5cblxuXG5cbik7XG4iXX0= */\n/*@ sourceURL=/Users/davidgabeau/Desktop/portfolio/components/Layout.js */"));
 });
 
 /***/ }),
@@ -112,6 +150,27 @@ function _arrayWithHoles(arr) {
 }
 
 module.exports = _arrayWithHoles;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+
+    return arr2;
+  }
+}
+
+module.exports = _arrayWithoutHoles;
 
 /***/ }),
 
@@ -349,6 +408,21 @@ module.exports = _interopRequireWildcard;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/iterableToArray.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/iterableToArray.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _iterableToArray(iter) {
+  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+}
+
+module.exports = _iterableToArray;
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js ***!
@@ -402,6 +476,21 @@ function _nonIterableRest() {
 }
 
 module.exports = _nonIterableRest;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/nonIterableSpread.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/nonIterableSpread.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+module.exports = _nonIterableSpread;
 
 /***/ }),
 
@@ -466,6 +555,27 @@ function _slicedToArray(arr, i) {
 }
 
 module.exports = _slicedToArray;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/toConsumableArray.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/toConsumableArray.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles */ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js");
+
+var iterableToArray = __webpack_require__(/*! ./iterableToArray */ "./node_modules/@babel/runtime/helpers/iterableToArray.js");
+
+var nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread */ "./node_modules/@babel/runtime/helpers/nonIterableSpread.js");
+
+function _toConsumableArray(arr) {
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || nonIterableSpread();
+}
+
+module.exports = _toConsumableArray;
 
 /***/ }),
 
@@ -1238,6 +1348,298 @@ function withRouter(ComposedComponent) {
 
   return WithRouterWrapper;
 }
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/amp-context.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/amp-context.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  }
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+exports.AmpStateContext = React.createContext({});
+
+if (true) {
+  exports.AmpStateContext.displayName = 'AmpStateContext';
+}
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/amp.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/amp.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var amp_context_1 = __webpack_require__(/*! ./amp-context */ "./node_modules/next/dist/next-server/lib/amp-context.js");
+
+function isInAmpMode() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$ampFirst = _ref.ampFirst,
+      ampFirst = _ref$ampFirst === void 0 ? false : _ref$ampFirst,
+      _ref$hybrid = _ref.hybrid,
+      hybrid = _ref$hybrid === void 0 ? false : _ref$hybrid,
+      _ref$hasQuery = _ref.hasQuery,
+      hasQuery = _ref$hasQuery === void 0 ? false : _ref$hasQuery;
+
+  return ampFirst || hybrid && hasQuery;
+}
+
+exports.isInAmpMode = isInAmpMode;
+
+function useAmp() {
+  // Don't assign the context value to a variable to save bytes
+  return isInAmpMode(react_1["default"].useContext(amp_context_1.AmpStateContext));
+}
+
+exports.useAmp = useAmp;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/head-manager-context.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/head-manager-context.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  }
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+exports.HeadManagerContext = React.createContext(null);
+
+if (true) {
+  exports.HeadManagerContext.displayName = 'HeadManagerContext';
+}
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/head.js":
+/*!********************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/head.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var side_effect_1 = __importDefault(__webpack_require__(/*! ./side-effect */ "./node_modules/next/dist/next-server/lib/side-effect.js"));
+
+var amp_context_1 = __webpack_require__(/*! ./amp-context */ "./node_modules/next/dist/next-server/lib/amp-context.js");
+
+var head_manager_context_1 = __webpack_require__(/*! ./head-manager-context */ "./node_modules/next/dist/next-server/lib/head-manager-context.js");
+
+var amp_1 = __webpack_require__(/*! ./amp */ "./node_modules/next/dist/next-server/lib/amp.js");
+
+function defaultHead() {
+  var inAmpMode = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+  var head = [react_1["default"].createElement("meta", {
+    charSet: "utf-8"
+  })];
+
+  if (!inAmpMode) {
+    head.push(react_1["default"].createElement("meta", {
+      name: "viewport",
+      content: "width=device-width"
+    }));
+  }
+
+  return head;
+}
+
+exports.defaultHead = defaultHead;
+
+function onlyReactElement(list, child) {
+  // React children can be "string" or "number" in this case we ignore them for backwards compat
+  if (typeof child === 'string' || typeof child === 'number') {
+    return list;
+  } // Adds support for React.Fragment
+
+
+  if (child.type === react_1["default"].Fragment) {
+    return list.concat(react_1["default"].Children.toArray(child.props.children).reduce(function (fragmentList, fragmentChild) {
+      if (typeof fragmentChild === 'string' || typeof fragmentChild === 'number') {
+        return fragmentList;
+      }
+
+      return fragmentList.concat(fragmentChild);
+    }, []));
+  }
+
+  return list.concat(child);
+}
+
+var METATYPES = ['name', 'httpEquiv', 'charSet', 'itemProp'];
+/*
+ returns a function for filtering head child elements
+ which shouldn't be duplicated, like <title/>
+ Also adds support for deduplicated `key` properties
+*/
+
+function unique() {
+  var keys = new Set();
+  var tags = new Set();
+  var metaTypes = new Set();
+  var metaCategories = {};
+  return function (h) {
+    var unique = true;
+
+    if (h.key && typeof h.key !== 'number' && h.key.indexOf('$') > 0) {
+      var key = h.key.slice(h.key.indexOf('$') + 1);
+
+      if (keys.has(key)) {
+        unique = false;
+      } else {
+        keys.add(key);
+      }
+    } // eslint-disable-next-line default-case
+
+
+    switch (h.type) {
+      case 'title':
+      case 'base':
+        if (tags.has(h.type)) {
+          unique = false;
+        } else {
+          tags.add(h.type);
+        }
+
+        break;
+
+      case 'meta':
+        for (var i = 0, len = METATYPES.length; i < len; i++) {
+          var metatype = METATYPES[i];
+          if (!h.props.hasOwnProperty(metatype)) continue;
+
+          if (metatype === 'charSet') {
+            if (metaTypes.has(metatype)) {
+              unique = false;
+            } else {
+              metaTypes.add(metatype);
+            }
+          } else {
+            var category = h.props[metatype];
+            var categories = metaCategories[metatype] || new Set();
+
+            if (categories.has(category)) {
+              unique = false;
+            } else {
+              categories.add(category);
+              metaCategories[metatype] = categories;
+            }
+          }
+        }
+
+        break;
+    }
+
+    return unique;
+  };
+}
+/**
+ *
+ * @param headElements List of multiple <Head> instances
+ */
+
+
+function reduceComponents(headElements, props) {
+  return headElements.reduce(function (list, headElement) {
+    var headElementChildren = react_1["default"].Children.toArray(headElement.props.children);
+    return list.concat(headElementChildren);
+  }, []).reduce(onlyReactElement, []).reverse().concat(defaultHead(props.inAmpMode)).filter(unique()).reverse().map(function (c, i) {
+    var key = c.key || i;
+    return react_1["default"].cloneElement(c, {
+      key: key
+    });
+  });
+}
+
+var Effect = side_effect_1["default"]();
+/**
+ * This component injects elements to `<head>` of your page.
+ * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
+ */
+
+function Head(_ref) {
+  var children = _ref.children;
+  return react_1["default"].createElement(amp_context_1.AmpStateContext.Consumer, null, function (ampState) {
+    return react_1["default"].createElement(head_manager_context_1.HeadManagerContext.Consumer, null, function (updateHead) {
+      return react_1["default"].createElement(Effect, {
+        reduceComponentsToState: reduceComponents,
+        handleStateChange: updateHead,
+        inAmpMode: amp_1.isInAmpMode(ampState)
+      }, children);
+    });
+  });
+}
+
+Head.rewind = Effect.rewind;
+exports["default"] = Head;
 
 /***/ }),
 
@@ -2257,6 +2659,115 @@ exports.getRouteRegex = getRouteRegex;
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/next-server/lib/side-effect.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/side-effect.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _classCallCheck = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+
+var _assertThisInitialized = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js");
+
+var _createClass = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+
+var _inherits = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
+
+var _possibleConstructorReturn = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
+
+var _getPrototypeOf = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
+
+var _toConsumableArray = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "./node_modules/@babel/runtime/helpers/toConsumableArray.js");
+
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var isServer = false;
+
+exports["default"] = function () {
+  var mountedInstances = new Set();
+  var state;
+
+  function emitChange(component) {
+    state = component.props.reduceComponentsToState(_toConsumableArray(mountedInstances), component.props);
+
+    if (component.props.handleStateChange) {
+      component.props.handleStateChange(state);
+    }
+  }
+
+  return /*#__PURE__*/function (_react_1$Component) {
+    _inherits(_class, _react_1$Component);
+
+    var _super = _createSuper(_class);
+
+    _createClass(_class, null, [{
+      key: "rewind",
+      // Used when server rendering
+      value: function rewind() {
+        var recordedState = state;
+        state = undefined;
+        mountedInstances.clear();
+        return recordedState;
+      }
+    }]);
+
+    function _class(props) {
+      var _this;
+
+      _classCallCheck(this, _class);
+
+      _this = _super.call(this, props);
+
+      if (isServer) {
+        mountedInstances.add(_assertThisInitialized(_this));
+        emitChange(_assertThisInitialized(_this));
+      }
+
+      return _this;
+    }
+
+    _createClass(_class, [{
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        mountedInstances.add(this);
+        emitChange(this);
+      }
+    }, {
+      key: "componentDidUpdate",
+      value: function componentDidUpdate() {
+        emitChange(this);
+      }
+    }, {
+      key: "componentWillUnmount",
+      value: function componentWillUnmount() {
+        mountedInstances["delete"](this);
+        emitChange(this);
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        return null;
+      }
+    }]);
+
+    return _class;
+  }(react_1.Component);
+};
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/next-server/lib/utils.js":
 /*!*********************************************************!*\
   !*** ./node_modules/next/dist/next-server/lib/utils.js ***!
@@ -2438,6 +2949,493 @@ exports.ST = exports.SP && typeof performance.mark === 'function' && typeof perf
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/next/dist/client/link.js")
+
+
+/***/ }),
+
+/***/ "./node_modules/nprogress/nprogress.js":
+/*!*********************************************!*\
+  !*** ./node_modules/nprogress/nprogress.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* NProgress, (c) 2013, 2014 Rico Sta. Cruz - http://ricostacruz.com/nprogress
+ * @license MIT */
+
+;(function(root, factory) {
+
+  if (true) {
+    !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else {}
+
+})(this, function() {
+  var NProgress = {};
+
+  NProgress.version = '0.2.0';
+
+  var Settings = NProgress.settings = {
+    minimum: 0.08,
+    easing: 'ease',
+    positionUsing: '',
+    speed: 200,
+    trickle: true,
+    trickleRate: 0.02,
+    trickleSpeed: 800,
+    showSpinner: true,
+    barSelector: '[role="bar"]',
+    spinnerSelector: '[role="spinner"]',
+    parent: 'body',
+    template: '<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
+  };
+
+  /**
+   * Updates configuration.
+   *
+   *     NProgress.configure({
+   *       minimum: 0.1
+   *     });
+   */
+  NProgress.configure = function(options) {
+    var key, value;
+    for (key in options) {
+      value = options[key];
+      if (value !== undefined && options.hasOwnProperty(key)) Settings[key] = value;
+    }
+
+    return this;
+  };
+
+  /**
+   * Last number.
+   */
+
+  NProgress.status = null;
+
+  /**
+   * Sets the progress bar status, where `n` is a number from `0.0` to `1.0`.
+   *
+   *     NProgress.set(0.4);
+   *     NProgress.set(1.0);
+   */
+
+  NProgress.set = function(n) {
+    var started = NProgress.isStarted();
+
+    n = clamp(n, Settings.minimum, 1);
+    NProgress.status = (n === 1 ? null : n);
+
+    var progress = NProgress.render(!started),
+        bar      = progress.querySelector(Settings.barSelector),
+        speed    = Settings.speed,
+        ease     = Settings.easing;
+
+    progress.offsetWidth; /* Repaint */
+
+    queue(function(next) {
+      // Set positionUsing if it hasn't already been set
+      if (Settings.positionUsing === '') Settings.positionUsing = NProgress.getPositioningCSS();
+
+      // Add transition
+      css(bar, barPositionCSS(n, speed, ease));
+
+      if (n === 1) {
+        // Fade out
+        css(progress, { 
+          transition: 'none', 
+          opacity: 1 
+        });
+        progress.offsetWidth; /* Repaint */
+
+        setTimeout(function() {
+          css(progress, { 
+            transition: 'all ' + speed + 'ms linear', 
+            opacity: 0 
+          });
+          setTimeout(function() {
+            NProgress.remove();
+            next();
+          }, speed);
+        }, speed);
+      } else {
+        setTimeout(next, speed);
+      }
+    });
+
+    return this;
+  };
+
+  NProgress.isStarted = function() {
+    return typeof NProgress.status === 'number';
+  };
+
+  /**
+   * Shows the progress bar.
+   * This is the same as setting the status to 0%, except that it doesn't go backwards.
+   *
+   *     NProgress.start();
+   *
+   */
+  NProgress.start = function() {
+    if (!NProgress.status) NProgress.set(0);
+
+    var work = function() {
+      setTimeout(function() {
+        if (!NProgress.status) return;
+        NProgress.trickle();
+        work();
+      }, Settings.trickleSpeed);
+    };
+
+    if (Settings.trickle) work();
+
+    return this;
+  };
+
+  /**
+   * Hides the progress bar.
+   * This is the *sort of* the same as setting the status to 100%, with the
+   * difference being `done()` makes some placebo effect of some realistic motion.
+   *
+   *     NProgress.done();
+   *
+   * If `true` is passed, it will show the progress bar even if its hidden.
+   *
+   *     NProgress.done(true);
+   */
+
+  NProgress.done = function(force) {
+    if (!force && !NProgress.status) return this;
+
+    return NProgress.inc(0.3 + 0.5 * Math.random()).set(1);
+  };
+
+  /**
+   * Increments by a random amount.
+   */
+
+  NProgress.inc = function(amount) {
+    var n = NProgress.status;
+
+    if (!n) {
+      return NProgress.start();
+    } else {
+      if (typeof amount !== 'number') {
+        amount = (1 - n) * clamp(Math.random() * n, 0.1, 0.95);
+      }
+
+      n = clamp(n + amount, 0, 0.994);
+      return NProgress.set(n);
+    }
+  };
+
+  NProgress.trickle = function() {
+    return NProgress.inc(Math.random() * Settings.trickleRate);
+  };
+
+  /**
+   * Waits for all supplied jQuery promises and
+   * increases the progress as the promises resolve.
+   *
+   * @param $promise jQUery Promise
+   */
+  (function() {
+    var initial = 0, current = 0;
+
+    NProgress.promise = function($promise) {
+      if (!$promise || $promise.state() === "resolved") {
+        return this;
+      }
+
+      if (current === 0) {
+        NProgress.start();
+      }
+
+      initial++;
+      current++;
+
+      $promise.always(function() {
+        current--;
+        if (current === 0) {
+            initial = 0;
+            NProgress.done();
+        } else {
+            NProgress.set((initial - current) / initial);
+        }
+      });
+
+      return this;
+    };
+
+  })();
+
+  /**
+   * (Internal) renders the progress bar markup based on the `template`
+   * setting.
+   */
+
+  NProgress.render = function(fromStart) {
+    if (NProgress.isRendered()) return document.getElementById('nprogress');
+
+    addClass(document.documentElement, 'nprogress-busy');
+    
+    var progress = document.createElement('div');
+    progress.id = 'nprogress';
+    progress.innerHTML = Settings.template;
+
+    var bar      = progress.querySelector(Settings.barSelector),
+        perc     = fromStart ? '-100' : toBarPerc(NProgress.status || 0),
+        parent   = document.querySelector(Settings.parent),
+        spinner;
+    
+    css(bar, {
+      transition: 'all 0 linear',
+      transform: 'translate3d(' + perc + '%,0,0)'
+    });
+
+    if (!Settings.showSpinner) {
+      spinner = progress.querySelector(Settings.spinnerSelector);
+      spinner && removeElement(spinner);
+    }
+
+    if (parent != document.body) {
+      addClass(parent, 'nprogress-custom-parent');
+    }
+
+    parent.appendChild(progress);
+    return progress;
+  };
+
+  /**
+   * Removes the element. Opposite of render().
+   */
+
+  NProgress.remove = function() {
+    removeClass(document.documentElement, 'nprogress-busy');
+    removeClass(document.querySelector(Settings.parent), 'nprogress-custom-parent');
+    var progress = document.getElementById('nprogress');
+    progress && removeElement(progress);
+  };
+
+  /**
+   * Checks if the progress bar is rendered.
+   */
+
+  NProgress.isRendered = function() {
+    return !!document.getElementById('nprogress');
+  };
+
+  /**
+   * Determine which positioning CSS rule to use.
+   */
+
+  NProgress.getPositioningCSS = function() {
+    // Sniff on document.body.style
+    var bodyStyle = document.body.style;
+
+    // Sniff prefixes
+    var vendorPrefix = ('WebkitTransform' in bodyStyle) ? 'Webkit' :
+                       ('MozTransform' in bodyStyle) ? 'Moz' :
+                       ('msTransform' in bodyStyle) ? 'ms' :
+                       ('OTransform' in bodyStyle) ? 'O' : '';
+
+    if (vendorPrefix + 'Perspective' in bodyStyle) {
+      // Modern browsers with 3D support, e.g. Webkit, IE10
+      return 'translate3d';
+    } else if (vendorPrefix + 'Transform' in bodyStyle) {
+      // Browsers without 3D support, e.g. IE9
+      return 'translate';
+    } else {
+      // Browsers without translate() support, e.g. IE7-8
+      return 'margin';
+    }
+  };
+
+  /**
+   * Helpers
+   */
+
+  function clamp(n, min, max) {
+    if (n < min) return min;
+    if (n > max) return max;
+    return n;
+  }
+
+  /**
+   * (Internal) converts a percentage (`0..1`) to a bar translateX
+   * percentage (`-100%..0%`).
+   */
+
+  function toBarPerc(n) {
+    return (-1 + n) * 100;
+  }
+
+
+  /**
+   * (Internal) returns the correct CSS for changing the bar's
+   * position given an n percentage, and speed and ease from Settings
+   */
+
+  function barPositionCSS(n, speed, ease) {
+    var barCSS;
+
+    if (Settings.positionUsing === 'translate3d') {
+      barCSS = { transform: 'translate3d('+toBarPerc(n)+'%,0,0)' };
+    } else if (Settings.positionUsing === 'translate') {
+      barCSS = { transform: 'translate('+toBarPerc(n)+'%,0)' };
+    } else {
+      barCSS = { 'margin-left': toBarPerc(n)+'%' };
+    }
+
+    barCSS.transition = 'all '+speed+'ms '+ease;
+
+    return barCSS;
+  }
+
+  /**
+   * (Internal) Queues a function to be executed.
+   */
+
+  var queue = (function() {
+    var pending = [];
+    
+    function next() {
+      var fn = pending.shift();
+      if (fn) {
+        fn(next);
+      }
+    }
+
+    return function(fn) {
+      pending.push(fn);
+      if (pending.length == 1) next();
+    };
+  })();
+
+  /**
+   * (Internal) Applies css properties to an element, similar to the jQuery 
+   * css method.
+   *
+   * While this helper does assist with vendor prefixed property names, it 
+   * does not perform any manipulation of values prior to setting styles.
+   */
+
+  var css = (function() {
+    var cssPrefixes = [ 'Webkit', 'O', 'Moz', 'ms' ],
+        cssProps    = {};
+
+    function camelCase(string) {
+      return string.replace(/^-ms-/, 'ms-').replace(/-([\da-z])/gi, function(match, letter) {
+        return letter.toUpperCase();
+      });
+    }
+
+    function getVendorProp(name) {
+      var style = document.body.style;
+      if (name in style) return name;
+
+      var i = cssPrefixes.length,
+          capName = name.charAt(0).toUpperCase() + name.slice(1),
+          vendorName;
+      while (i--) {
+        vendorName = cssPrefixes[i] + capName;
+        if (vendorName in style) return vendorName;
+      }
+
+      return name;
+    }
+
+    function getStyleProp(name) {
+      name = camelCase(name);
+      return cssProps[name] || (cssProps[name] = getVendorProp(name));
+    }
+
+    function applyCss(element, prop, value) {
+      prop = getStyleProp(prop);
+      element.style[prop] = value;
+    }
+
+    return function(element, properties) {
+      var args = arguments,
+          prop, 
+          value;
+
+      if (args.length == 2) {
+        for (prop in properties) {
+          value = properties[prop];
+          if (value !== undefined && properties.hasOwnProperty(prop)) applyCss(element, prop, value);
+        }
+      } else {
+        applyCss(element, args[1], args[2]);
+      }
+    }
+  })();
+
+  /**
+   * (Internal) Determines if an element or space separated list of class names contains a class name.
+   */
+
+  function hasClass(element, name) {
+    var list = typeof element == 'string' ? element : classList(element);
+    return list.indexOf(' ' + name + ' ') >= 0;
+  }
+
+  /**
+   * (Internal) Adds a class to an element.
+   */
+
+  function addClass(element, name) {
+    var oldList = classList(element),
+        newList = oldList + name;
+
+    if (hasClass(oldList, name)) return; 
+
+    // Trim the opening space.
+    element.className = newList.substring(1);
+  }
+
+  /**
+   * (Internal) Removes a class from an element.
+   */
+
+  function removeClass(element, name) {
+    var oldList = classList(element),
+        newList;
+
+    if (!hasClass(element, name)) return;
+
+    // Replace the class name.
+    newList = oldList.replace(' ' + name + ' ', ' ');
+
+    // Trim the opening and closing spaces.
+    element.className = newList.substring(1, newList.length - 1);
+  }
+
+  /**
+   * (Internal) Gets a space separated list of the class names on the element. 
+   * The list is wrapped with a single space on each end to facilitate finding 
+   * matches within the list.
+   */
+
+  function classList(element) {
+    return (' ' + (element.className || '') + ' ').replace(/\s+/gi, ' ');
+  }
+
+  /**
+   * (Internal) Removes an element from the DOM.
+   */
+
+  function removeElement(element) {
+    element && element.parentNode && element.parentNode.removeChild(element);
+  }
+
+  return NProgress;
+});
+
 
 
 /***/ }),
@@ -5353,7 +6351,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fdavidgabeau%2FDesktop%2Fportfolio%2Fpages%2Fabout.js ***!
   \*************************************************************************************************************************************/
@@ -5376,5 +6374,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=about.js.map
