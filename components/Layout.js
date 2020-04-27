@@ -12,13 +12,11 @@ Router.onRouteChangeStart = url => {
 Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
 
-  export default ({ children, title }) => (
-<div className="root">
-  <Head>
-    <title> GLO </title>
-  </Head>
-
-
+export default ({ children, title }) => (
+  <div className="root">
+    <Head>
+      <title> GLO </title>
+      </Head>
     <header>
       <Link href="/">
         <a> Home </a>
